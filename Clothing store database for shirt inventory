@@ -1,0 +1,24 @@
+--Create a clothing store database for shirts
+
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, price NUMERIC, quantity INTEGER, color TEXT, size TEXT, season TEXT);
+INSERT INTO clothing_store VALUES (1, "10", 4, "blue", "M", "fall");
+INSERT INTO clothing_store VALUES (2, "15", 8, "red", "XL", "winter");
+INSERT INTO clothing_store VALUES (3, "18", 22, "pink", "S", "summer");
+INSERT INTO clothing_store VALUES (4, "22", 34, "orange", "L", "spring");
+INSERT INTO clothing_store VALUES (5, "38", 16, "tan", "XXL", "fall");
+INSERT INTO clothing_store VALUES (6, "11", 24, "yellow", "XL", "winter");
+INSERT INTO clothing_store VALUES (7, "8", 38, "white", "M", "summer");
+INSERT INTO clothing_store VALUES (8, "26", 16, "salmon", "XL", "spring");
+INSERT INTO clothing_store VALUES (9, "5", 28, "gray", "L", "fall");
+INSERT INTO clothing_store VALUES (10, "17", 37, "maroon", "XXL", "winter");
+INSERT INTO clothing_store VALUES (11, "19", 84, "violet", "S", "summer");
+INSERT INTO clothing_store VALUES (12, "27", 4, "purple", "XS", "winter");
+INSERT INTO clothing_store VALUES (13, "13", 89, "gold", "M", "fall");
+INSERT INTO clothing_store VALUES (14, "3", 31, "black", "L", "winter");
+INSERT INTO clothing_store VALUES (15, "19", 47, "charcoal", "S", "fall");
+SELECT color, quantity, price FROM clothing_store
+ORDER BY price DESC;
+
+--display the database ordered by price. 
+SELECT color, quantity, price FROM clothing_store
+ORDER BY price desc; 
